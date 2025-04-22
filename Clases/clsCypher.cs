@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Matriculas.Clases
 {
-    public class clsChyper
+    public class clsCypher
     {
 
         public string Password { get; set; }
