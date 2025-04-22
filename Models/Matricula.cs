@@ -11,7 +11,8 @@ namespace Matriculas.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using Newtonsoft.Json;
+
     public partial class Matricula
     {
         public int idMatricula { get; set; }
@@ -22,7 +23,8 @@ namespace Matriculas.Models
         public System.DateTime FechaMatricula { get; set; }
         public string SemestreMatricula { get; set; }
         public string MateriasMatriculadas { get; set; }
-    
+
+        [JsonIgnore]
         public virtual Estudiante Estudiante { get; set; }
     }
 }
